@@ -69,7 +69,7 @@ jobs:
             fi
           fi
 
-          base_image=$(grep 'FROM ' $docker_file | sed 's#${REGISTRY}/##' | tail -1 | cut -f2 -d' ')
+          base_image=$(grep 'FROM ' "${{matrix.version}}.docker" | sed 's#${REGISTRY}/##' | tail -1 | cut -f2 -d' ')
 
           echo "Base image: $base_image"
 
