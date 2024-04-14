@@ -51,7 +51,6 @@ jobs:
 
       - name: Check for rebuild
         id: rebuild_check
-        continue-on-error: true
         run : |
           # [rebuild-check]
 
@@ -71,7 +70,9 @@ jobs:
 
           base_image=$(grep 'FROM ' "${{matrix.version}}.docker" | sed 's#${REGISTRY}/##' | tail -1 | cut -f2 -d' ')
 
+          echo ""
           echo "Base image: $base_image"
+          echo ""
 
           docker pull "${{env.REGISTRY}}/$base_image"
 
