@@ -56,6 +56,12 @@ jobs:
             echo "::warning::Rebuild ${{matrix.version}} (reason: forced rebuild)"
             echo "build=true" >> $GITHUB_OUTPUT
             exit 0
+          else
+            if ! docker pull "${{github.repository}}:${{matrix.version}}" ; then
+              echo "::warning::Rebuild ${{matrix.version}} (reason: new image)"
+              echo "build=true" >> $GITHUB_OUTPUT
+              exit 0
+            fi
           fi
 
           echo -e "::group::\033[34mChecking for rebuilt base image…\033[0m"
