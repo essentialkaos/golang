@@ -10,7 +10,7 @@ This repository contains Dockerfiles with Golang images based on Alpine and Orac
 
 ### Usage
 
-Images in GitHub Container Registry:
+Images in [GitHub Container Registry](https://kaos.sh/p/golang):
 
 - `ghcr.io/essentialkaos/golang:alpine3.15`
 - `ghcr.io/essentialkaos/golang:alpine3.16`
@@ -20,7 +20,7 @@ Images in GitHub Container Registry:
 - `ghcr.io/essentialkaos/golang:ol8`
 - `ghcr.io/essentialkaos/golang:ol9`
 
-Images in DockerHub:
+Images in [DockerHub](https://kaos.sh/d/golang):
 
 - `essentialkaos/golang:alpine3.15`
 - `essentialkaos/golang:alpine3.16`
