@@ -17,6 +17,7 @@ Images in [GitHub Container Registry](https://kaos.sh/p/golang):
 - `ghcr.io/essentialkaos/golang:alpine3.17`
 - `ghcr.io/essentialkaos/golang:alpine3.18`
 - `ghcr.io/essentialkaos/golang:alpine3.19`
+- `ghcr.io/essentialkaos/golang:alpine3.20`
 - `ghcr.io/essentialkaos/golang:ol8`
 - `ghcr.io/essentialkaos/golang:ol9`
 
@@ -27,6 +28,7 @@ Images in [DockerHub](https://kaos.sh/d/golang):
 - `essentialkaos/golang:alpine3.17`
 - `essentialkaos/golang:alpine3.18`
 - `essentialkaos/golang:alpine3.19`
+- `essentialkaos/golang:alpine3.20`
 - `essentialkaos/golang:ol8`
 - `essentialkaos/golang:ol9`
 
