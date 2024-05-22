@@ -1,0 +1,12 @@
+## REGISTRY CONFIGURATION ######################################################
+
+ARG REGISTRY="ghcr.io"
+
+## REGISTRY CONFIGURATION ######################################################
+
+FROM ${REGISTRY}/essentialkaos/alpine:3.20
+
+# hadolint ignore=DL3018
+RUN apk add --no-cache go git make
+
+################################################################################
