@@ -1,9 +1,8 @@
-
-<p align="center"><a href="#readme"><img src="https://gh.kaos.st/golang.svg"/></a></p>
+<p align="center"><a href="#readme"><img src=".github/images/card.svg"/></a></p>
 
 <p align="center">
   <a href="https://kaos.sh/w/golang/cd"><img src="https://kaos.sh/w/golang/cd.svg" alt="GitHub Actions CD Status" /></a>
-  <a href="#license"><img src="https://gh.kaos.st/apache2.svg"></a>
+  <a href="#license"><img src=".github/images/license.svg"/></a>
 </p>
 
 This repository contains Dockerfiles with Golang images based on Alpine and OracleLinux.
