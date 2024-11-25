@@ -102,6 +102,12 @@ jobs:
             ${{env.REGISTRY}}/${{github.repository}}:${{matrix.version}}
             ${{github.repository}}:${{matrix.version}}
 
+      - name: Print info about Go version
+        run: |
+          # [print-go-version]
+
+          docker run docker pull "${{env.REGISTRY}}/${{github.repository}}:${{matrix.version}}" go version
+
       - name: Show info about image
         uses: essentialkaos/docker-info-action@v1
         with:
