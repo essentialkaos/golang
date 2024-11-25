@@ -11,8 +11,6 @@ This repository contains Dockerfiles with Golang images based on [Alpine](https:
 
 Images in [GitHub Container Registry](https://kaos.sh/p/golang):
 
-- `ghcr.io/essentialkaos/golang:alpine3.15`
-- `ghcr.io/essentialkaos/golang:alpine3.16`
 - `ghcr.io/essentialkaos/golang:alpine3.17`
 - `ghcr.io/essentialkaos/golang:alpine3.18`
 - `ghcr.io/essentialkaos/golang:alpine3.19`
@@ -22,8 +20,6 @@ Images in [GitHub Container Registry](https://kaos.sh/p/golang):
 
 Images in [DockerHub](https://kaos.sh/d/golang):
 
-- `essentialkaos/golang:alpine3.15`
-- `essentialkaos/golang:alpine3.16`
 - `essentialkaos/golang:alpine3.17`
 - `essentialkaos/golang:alpine3.18`
 - `essentialkaos/golang:alpine3.19`
@@ -40,7 +36,7 @@ ARG REGISTRY="docker.io"
 
 ## BUILDER #####################################################################
 
-FROM ${REGISTRY}/essentialkaos/golang:alpine3.17 as builder
+FROM ${REGISTRY}/essentialkaos/golang:alpine3.20 as builder
 
 WORKDIR /go/src/github.com/johndoe/app
 
@@ -50,7 +46,7 @@ RUN make deps && make all
 
 ## FINAL IMAGE #################################################################
 
-FROM ${REGISTRY}/essentialkaos/alpine:3.17
+FROM ${REGISTRY}/essentialkaos/alpine:3.20
 
 COPY --from=builder /go/src/github.com/johndoe/app/app /usr/bin/
 
