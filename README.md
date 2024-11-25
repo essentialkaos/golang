@@ -5,7 +5,7 @@
   <a href="#license"><img src=".github/images/license.svg"/></a>
 </p>
 
-This repository contains Dockerfiles with Golang images based on Alpine and OracleLinux.
+This repository contains Dockerfiles with Golang images based on [Alpine](https://www.alpinelinux.org) and [OracleLinux](https://www.oracle.com/linux/).
 
 ### Usage
 

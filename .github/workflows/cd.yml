@@ -28,7 +28,7 @@ jobs:
 
     strategy:
       matrix:
-        version: [ 'alpine3.15', 'alpine3.16', 'alpine3.17', 'alpine3.18', 'alpine3.19', 'alpine3.20', 'ol8', 'ol9' ]
+        version: [ 'alpine3.17', 'alpine3.18', 'alpine3.19', 'alpine3.20', 'ol8', 'ol9' ]
 
     steps:
       - name: Checkout
@@ -51,7 +51,7 @@ jobs:
 
       - name: Check for rebuild
         id: rebuild_check
-        run : |
+        run: |
           # [rebuild-check]
 
           echo -e "::group::\033[34mChecking for rebuilt base image…\033[0m"
