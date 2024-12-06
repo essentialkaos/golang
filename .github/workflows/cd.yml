@@ -28,7 +28,7 @@ jobs:
 
     strategy:
       matrix:
-        version: [ 'alpine3.17', 'alpine3.18', 'alpine3.19', 'alpine3.20', 'ol8', 'ol9' ]
+        version: [ 'alpine3.18', 'alpine3.19', 'alpine3.20', 'alpine3.21', 'ol8', 'ol9' ]
 
     steps:
       - name: Checkout
