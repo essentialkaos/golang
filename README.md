@@ -11,19 +11,19 @@ This repository contains Dockerfiles with Golang images based on [Alpine](https:
 
 Images in [GitHub Container Registry](https://kaos.sh/p/golang):
 
-- `ghcr.io/essentialkaos/golang:alpine3.18`
 - `ghcr.io/essentialkaos/golang:alpine3.19`
 - `ghcr.io/essentialkaos/golang:alpine3.20`
 - `ghcr.io/essentialkaos/golang:alpine3.21`
+- `ghcr.io/essentialkaos/golang:alpine3.22`
 - `ghcr.io/essentialkaos/golang:ol8`
 - `ghcr.io/essentialkaos/golang:ol9`
 
 Images in [DockerHub](https://kaos.sh/d/golang):
 
-- `essentialkaos/golang:alpine3.18`
 - `essentialkaos/golang:alpine3.19`
 - `essentialkaos/golang:alpine3.20`
 - `essentialkaos/golang:alpine3.21`
+- `essentialkaos/golang:alpine3.22`
 - `essentialkaos/golang:ol8`
 - `essentialkaos/golang:ol9`
 
