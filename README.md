@@ -17,6 +17,7 @@ Images in [GitHub Container Registry](https://kaos.sh/p/golang):
 - `ghcr.io/essentialkaos/golang:alpine3.22`
 - `ghcr.io/essentialkaos/golang:ol8`
 - `ghcr.io/essentialkaos/golang:ol9`
+- `ghcr.io/essentialkaos/golang:ol10`
 
 Images in [DockerHub](https://kaos.sh/d/golang):
 
@@ -26,6 +27,7 @@ Images in [DockerHub](https://kaos.sh/d/golang):
 - `essentialkaos/golang:alpine3.22`
 - `essentialkaos/golang:ol8`
 - `essentialkaos/golang:ol9`
+- `essentialkaos/golang:ol10`
 
 ### Usage example
 
@@ -36,7 +38,7 @@ ARG REGISTRY="docker.io"
 
 ## BUILDER #####################################################################
 
-FROM ${REGISTRY}/essentialkaos/golang:alpine3.20 as builder
+FROM ${REGISTRY}/essentialkaos/golang:alpine3.22 AS builder
 
 WORKDIR /go/src/github.com/johndoe/app
 
@@ -46,7 +48,7 @@ RUN make deps && make all
 
 ## FINAL IMAGE #################################################################
 
-FROM ${REGISTRY}/essentialkaos/alpine:3.20
+FROM ${REGISTRY}/essentialkaos/alpine:3.22 AS final
 
 COPY --from=builder /go/src/github.com/johndoe/app/app /usr/bin/
 
