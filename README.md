@@ -5,7 +5,7 @@
   <a href="#license"><img src=".github/images/license.svg"/></a>
 </p>
 
-This repository contains Dockerfiles with Golang images based on [Alpine](https://www.alpinelinux.org) and [OracleLinux](https://www.oracle.com/linux/).
+This repository contains Dockerfiles with Golang images based on [Alpine](https://www.alpinelinux.org), [AlmaLinux](https://almalinux.org) and [OracleLinux](https://www.oracle.com/linux/).
 
 ### Usage
 
@@ -18,6 +18,9 @@ Images in [GitHub Container Registry](https://kaos.sh/p/golang):
 - `ghcr.io/essentialkaos/golang:ol8`
 - `ghcr.io/essentialkaos/golang:ol9`
 - `ghcr.io/essentialkaos/golang:ol10`
+- `ghcr.io/essentialkaos/golang:alma8`
+- `ghcr.io/essentialkaos/golang:alma9`
+- `ghcr.io/essentialkaos/golang:alma10`
 
 Images in [DockerHub](https://kaos.sh/d/golang):
 
@@ -28,6 +31,9 @@ Images in [DockerHub](https://kaos.sh/d/golang):
 - `essentialkaos/golang:ol8`
 - `essentialkaos/golang:ol9`
 - `essentialkaos/golang:ol10`
+- `essentialkaos/golang:alma8`
+- `essentialkaos/golang:alma9`
+- `essentialkaos/golang:alma10`
 
 ### Usage example
 

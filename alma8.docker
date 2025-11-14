@@ -1,0 +1,19 @@
+## REGISTRY CONFIGURATION ######################################################
+
+ARG REGISTRY="ghcr.io"
+
+## REGISTRY CONFIGURATION ######################################################
+
+FROM ${REGISTRY}/essentialkaos/almalinux:8
+
+# hadolint ignore=DL3018,DL3041
+RUN dnf install -y https://pkgs.kaos.st/kaos-repo-latest.el8.noarch.rpm && \
+    dnf install -y golang git && \
+    dnf clean all && \
+    rm -rf /var/cache/dnf /var/log/dnf.*
+
+RUN mkdir -p "/go/src" && chmod -R 777 "/go"
+
+ENV GOPATH=/go
+
+################################################################################
